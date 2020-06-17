@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Flip Flop</string>
+    <string name="login_button">Login</string>
+    <string name="logout_button">Logout</string>
+    <string name="register_button">Register</string>
+    <string name="profile_button">Profile</string>
+    <string name="post_title">Title: </string>
+    <string name="sample_text">This is sample text</string>
+    <string name="sample_description">Astronomy is the scientific study of celestial objects
+    (such as stars, planets, comets, and galaxies) and phenomena that originate outside the </string>
+    <string name="post_comment">Post Comment</string>
+    <string name="cancel_comment">Cancel</string>
+    <string name="username_field_lbl">Enter username:</string>
+    <string name="username_field">Username</string>
+    <string name="password_field_lbl">Enter password:</string>
+    <string name="password_field">Password</string>
+    <string name="confirm_pass_field">Confirm Password</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="login_prompt">Login</string>
+    <string name="register_prompt">Register</string>
+    <string name="post_content">Content: </string>
+    <string name="post_title_prompt">Max title length: 50 characters</string>
+    <string name="post_content_prompt">Max characters: 250</string>
+    <string name="license_agreement">License Agreement</string>
+    <string name="post_button">Post</string>
+    <string name="comment_content_prompt">Max comment length: 250 characters</string>
+    <string name="anon_user">ANON</string>
+    <string name="post_liked">Posts Liked</string>
+    <string name="post_disliked">Posts Disliked</string>
+    <string name="date_created">Date Created:</string>
+    <string name="location">Toronto</string>
+
+
+</resources>

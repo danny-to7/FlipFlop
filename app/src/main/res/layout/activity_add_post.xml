@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="@string/post_title"
+            android:textColor="@color/darkBlue"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:counterTextAppearance="@color/blue"
+            app:counterOverflowTextAppearance="@color/red">
+            <EditText
+                android:id="@+id/add_post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:hint="@string/post_title_prompt"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="@string/post_content"
+            android:textColor="@color/darkBlue"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="250"
+            app:counterTextAppearance="@color/blue"
+            app:counterOverflowTextAppearance="@color/red">
+            <EditText
+                android:id="@+id/add_post_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/post_content_prompt"
+                android:minLines="5"
+                android:maxLines="5"
+                android:maxLength="250"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/postBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_button"
+                android:layout_margin="5dp"
+                android:onClick="addPost"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_green"
+                android:shadowColor="@color/blue"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel_button"
+                android:layout_margin="5dp"
+                android:onClick="cancelPost"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_red"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
